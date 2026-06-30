@@ -1,0 +1,38 @@
+.lower-third {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+
+  background: #1f1f1f;
+  border-left: 8px soild #00c8ff;
+
+  padding: 20px 30px;
+  min-width: 400px;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+
+  /* Animation setup */
+  transform: translateX(-120%);
+  opacity: 0;
+
+  transition:
+    transform 0.6s ease,
+    opacity 0.6s ease;
+}
+
+/* Visable state */
+.lower-third.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.lower-third h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.lower-third p {
+  color: white;
+  font-size: 1px;
+}
